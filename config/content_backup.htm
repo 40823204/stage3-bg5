@@ -13,6 +13,7 @@
 <h1>每周進度</h1>
 <h2>w10</h2>
 <p><span style="color: #ff0000;">資料整理</span></p>
+<h4></h4>
 <h3>stage1</h3>
 <p><span style="color: #ff0000;"><strong>bg14</strong></span></p>
 <p>專題主題:<b>升降平台</b></p>
@@ -72,9 +73,212 @@
 <p><br/>主題簡述:</p>
 <p>在工地裡,經常需要用到台車搬運東西,例如裝著水泥的箱子,如果是要靠人力搬運的話,不僅會造成工作效率的減少,也會使搬運人員的體力大量消耗,所以討論過後,我們小組決定設計”省力搬運機”,不僅解決搬運問題,也大幅地提高工作效率與人員體力的損耗。</p>
 <h2>w11</h2>
-<h1>影片</h1>
-<p>ipv4連線操作影片</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/PjEUfUmZVoQ" width="560"></iframe></p>
-<p><b>---------------------------------------</b></p>
-<p>直播的影片</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/T2CSmVCGPLk" width="560"></iframe></p>
+<p><strong>4月29討論結果</strong><br/><strong>主題:暫定<span>飛機或是汽車等之後再更改</span></strong></p>
+<p><strong><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/qo33Pq-pSV8" width="560"></iframe></strong></p>
+<h2>w12</h2>
+<p>上課直播</p>
+<p><span>40823221 40823237</span><br/><span>主題: ipv4操作api</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/T2CSmVCGPLk" width="560"></iframe></span></p>
+<p><span></span></p>
+<p><span>40823220 40823250<br/><span>主題:Task2、ipv4講解、作品的圖檔進度及講解和參考資料</span></span></p>
+<p><span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/7dUx6LlgXMI" width="560"></iframe></span></span></p>
+<h2>w13</h2>
+<p>上課直播</p>
+<p>40823205 40823228</p>
+<p>主題:解決CMSIMDE版本錯誤</p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/T2CSmVCGPLk" width="560"></iframe></span></p>
+<p><span>40823220 40823250</span></p>
+<p><span>主題:介紹inventor及 reveal教學</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/9L3157sRr2U" width="560"></iframe></span></p>
+<h2>w14</h2>
+<p>線上同步教學</p>
+<p>第一次直播</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/npptDs_cz78" width="560"></iframe></p>
+<p><span>第二次直播</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/SOV4d6DmCEs" width="560"></iframe></span></p>
+<h1>task2</h1>
+<h2>BG1</h2>
+<p><span style="background-color: #ffff00;">stage1-bg14<span style="background-color: #ffff00;"></span></span></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Ex3o115nqDs" width="560"></iframe></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import math
+import random
+import time
+import keyboard
+   
+print ('Start')
+   
+# Close eventual old connections
+vrep.simxFinish(-1)
+# Connect to V-REP remote server
+clientID = vrep.simxStart('127.0.0.1', 19997, True, True, 5000, 5)
+  
+if clientID !=-1:
+    print ('Connected to remote API server')
+   
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "40823242",
+        vrep.simx_opmode_oneshot)
+          
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+          
+    opmode = vrep.simx_opmode_oneshot_wait
+    vrep.simxStartSimulation(clientID, opmode)
+    ret,vertical_handle=vrep.simxGetObjectHandle(clientID,"1",opmode)#設定軸對應名稱
+ 
+    while True:
+        #keyboard "w" 前進
+     if keyboard.is_pressed("w"):
+            print("up")
+            
+            vrep.simxSetJointTargetVelocity(clientID,vertical_handle,-0.01,opmode)
+     if keyboard.is_pressed("s"):#keyboard "s" 後退
+            print("down")
+            
+            vrep.simxSetJointTargetVelocity(clientID,vertical_handle,0.01,opmode)
+ 
+     if keyboard.is_pressed("q"):#keyboard "q" 前進後退停止
+            print("stop")
+            
+            vrep.simxSetJointTargetVelocity(clientID,vertical_handle,0,opmode)
+      
+else:
+    print ('Failed connecting to  remote API server')
+print ('End')</pre>
+<p><span></span></p>
+<p><span style="background-color: #ffff00;">stage1-bg16</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Ua9zBclBMPY" width="560"></iframe></span></p>
+<p><span style="background-color: #ffff00;">stage1-bg24</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/861JHEgRNk0" width="560"></iframe></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import math
+import random
+import time
+import keyboard
+  
+print ('Start')
+  
+# Close eventual old connections
+vrep.simxFinish(-1)
+# Connect to V-REP remote server
+clientID = vrep.simxStart('192.168.50.217', 19997, True, True, 5000, 5)
+   
+if clientID !=-1:
+    print ('Connected to remote API server')
+    
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "40823204",
+        vrep.simx_opmode_oneshot)
+           
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+           
+    opmode = vrep.simx_opmode_oneshot_wait
+    STREAMING = vrep.simx_opmode_streaming
+      
+    vrep.simxStartSimulation(clientID, opmode)
+     
+     
+    ret,joint0=vrep.simxGetObjectHandle(clientID,"joint0",opmode)
+    ret,joint1=vrep.simxGetObjectHandle(clientID,"joint1",opmode)
+    dy=0
+    dr=0
+    vrep.simxSetJointTargetPosition(clientID,joint0,dy,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint1,dr,opmode)
+     
+    while True:
+        #Clockwise
+        if keyboard.is_pressed("2"):
+            dy=dy-0.1
+            dr=dr+0.1
+            vrep.simxSetJointTargetPosition(clientID,joint0,dy,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint1,dr,opmode)
+            print("go")
+  
+else:
+    print ('Failed connecting to  remote API server')
+    print ('End')</pre>
+<p></p>
+<p><span style="background-color: #ffff00;"></span></p><h2>BG2</h2>
+<p><span>stage2-bg12</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/MsF1WQpAa04" width="560"></iframe></span></p>
+<p><span></span></p>
+<p><span>stage2-bg14</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/H0m3scUj7iM" width="560"></iframe></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import math
+import random
+import time
+import keyboard
+  
+print ('Start')
+  
+# Close eventual old connections
+vrep.simxFinish(-1)
+# Connect to V-REP remote server
+clientID = vrep.simxStart('192.168.50.217', 19997, True, True, 5000, 5)
+   
+if clientID !=-1:
+    print ('Connected to remote API server')
+    
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "40823204",
+        vrep.simx_opmode_oneshot)
+           
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+           
+    opmode = vrep.simx_opmode_oneshot_wait
+    STREAMING = vrep.simx_opmode_streaming
+      
+    vrep.simxStartSimulation(clientID, opmode)
+     
+     
+    ret,fwheel_handle=vrep.simxGetObjectHandle(clientID,"joint0",opmode)
+    ret,bwheel_handle=vrep.simxGetObjectHandle(clientID,"joint2",opmode)
+    ret,pole1_handle=vrep.simxGetObjectHandle(clientID,"joint3",opmode)
+    ret,pole2_handle=vrep.simxGetObjectHandle(clientID,"joint4",opmode)
+    ds=0
+    dy=0
+    df=0
+    db=0
+    vrep.simxSetJointTargetPosition(clientID,fwheel_handle,df,opmode)
+    vrep.simxSetJointTargetPosition(clientID,bwheel_handle,db,opmode)
+    vrep.simxSetJointTargetPosition(clientID,pole1_handle,ds,opmode)
+    vrep.simxSetJointTargetPosition(clientID,pole2_handle,dy,opmode)
+     
+     
+    while True:
+        #Clockwise
+        if keyboard.is_pressed("2"):
+            ds=ds-0.01
+            dy=dy-0.01
+            vrep.simxSetJointTargetPosition(clientID,pole1_handle,ds,opmode)
+            vrep.simxSetJointTargetPosition(clientID,pole2_handle,dy,opmode)
+            print("up")
+        if keyboard.is_pressed("4"):
+            ds=ds+0.01
+            dy=dy+0.01
+            vrep.simxSetJointTargetPosition(clientID,pole1_handle,ds,opmode)
+            vrep.simxSetJointTargetPosition(clientID,pole2_handle,dy,opmode)
+            print("down")
+        if keyboard.is_pressed("6"):
+            df=df+0.2
+            db=db+0.2
+            vrep.simxSetJointTargetPosition(clientID,fwheel_handle,df,opmode)
+            vrep.simxSetJointTargetPosition(clientID,bwheel_handle,db,opmode)
+            print("left")
+        if keyboard.is_pressed("8"):
+            df=df-0.2
+            db=db-0.2
+            vrep.simxSetJointTargetPosition(clientID,fwheel_handle,df,opmode)
+            vrep.simxSetJointTargetPosition(clientID,bwheel_handle,db,opmode)
+            print("right")
+ 
+ 
+              
+else:
+    print ('Failed connecting to  remote API server')
+    print ('End')</pre>
+<p></p><h2>BG3</h2>
