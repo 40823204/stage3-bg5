@@ -2,7 +2,7 @@
         <head>
         <title>stage3-bg5</title>
         <meta charset="utf-8">
-<meta property="head" content="H3">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -134,53 +134,111 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W10 新增Stage1、2 工作分配 << <a href='W10 新增Stage1、2 工作分配.html'>Previous</a> <a href='stage2.html'>Next</a> >> stage2<br /><h1>stage1</h1>
-<p><span style="color: #ff0000;"><strong>bg14</strong></span></p>
-<p>專題主題:<b>升降平台</b></p>
-<p><b>組員/分工:</b></p>
-<p><b>40823228/成品零件繪製、模擬、報告影片</b></p>
-<p><b>40823242/初稿零件繪製、模擬、報告影片</b></p>
-<p><b></b></p>
-<p><b>主題簡述:</b></p>
-<p><b>在工地裡，經常需要在高處實施作業，可是 目前在外面看到的作業平台都是用組裝式 的，不僅延長工作時間，在搭建過程，也有 極大的掉落風險，所以我們小組設計出”油 壓式升降平台”，不僅方便攜帶，也大幅減 少風險與搭建平台的作業時間。</b></p>
-<p><b>---------------------------------------</b></p>
-<p><span style="color: #ff0000;"><strong>bg24</strong></span></p>
-<p><b>專題主題:升降裝置</b></p>
-<p><b>組員/分工:</b></p>
-<p><b>40823204/CoppeliaSim 測試、分組網站、PDF 製 作、reveal 簡報</b></p>
-<p><b>40823220/繪圖(Inventor)、reveal 簡報 </b></p>
-<p><b></b></p>
-<p><b>主題簡述:</b></p>
-<p><b>方便搬運重物：大型可用來載人、小型可用在各 種自動化機械。</b></p>
-<p><b>---------------------------------------</b></p>
-<p><span style="color: #ff0000;"><b>bg16</b></span></p>
-<p><b>專題主題:氣動馬達</b></p>
-<p><b>組員/分工:</b></p>
-<p><b>40823221/<span>Coppelia模擬、PDF製作、合併倉儲及網站</span></b></p>
-<p><b>40823237/<span>繪製圖檔、reveal製作、倉儲推送及維護</span></b></p>
-<p><b></b></p>
-<p><b>主題簡述:</b></p>
-<p><b>因為對汽車作動原理有些許興趣，所以以引擎 的活塞與皮帶輪關係做變化。</b></p>
-<p><b>---------------------------------------</b></p>
-<p><span style="color: #ff0000;"><b>bg17</b></span></p>
-<p><b>專題主題:挖土機<br/></b></p>
-<p><b>組員/分工:</b></p>
-<p><b>40832244/<span>Coppelia模擬、PDF製作、合併倉儲及網站</span></b></p>
-<p><b>40823250/<span>繪製圖檔、reveal製作、倉儲推送及維護</span></b></p>
-<p><b></b></p>
-<p><b>主題簡述:</b></p>
-<p><b>對於重物的搬運相當耗時，幫助在有需要的工作上。<br/></b></p>
-<p><b>---------------------------------------</b></p>
-<p><span style="color: #ff0000;"><b>bg11</b></span></p>
-<p><b>專題主題:鋼板滑車</b><b><br/></b></p>
-<p><b>組員/分工:</b></p>
-<p><b>40823205/零件繪製及組裝、PDF製作</b></p>
-<p><b>40823239/倉儲推送及維護、reveal簡報</b></p>
-<p><b></b></p>
-<p><b>主題簡述:</b></p>
-<p><b>工業上需要提起重物的地方很多，這種時候使用鋼板滑車，能夠更加省力的舉起重物。</b></p>
-<p><b>---------------------------------------</b></p>
-<br />W10 新增Stage1、2 工作分配 << <a href='W10 新增Stage1、2 工作分配.html'>Previous</a> <a href='stage2.html'>Next</a> >> stage2</div>
+    <div id="tipue_search_content">Task2 << <a href='Task2.html'>Previous</a> <a href='Stage 2.html'>Next</a> >> Stage 2<br /><h1>Stage 1</h1>
+<p><span style="background-color: #ffff00;">stage1-bg14<span style="background-color: #ffff00;"></span></span></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Ex3o115nqDs" width="560"></iframe></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import math
+import random
+import time
+import keyboard
+   
+print ('Start')
+   
+# Close eventual old connections
+vrep.simxFinish(-1)
+# Connect to V-REP remote server
+clientID = vrep.simxStart('127.0.0.1', 19997, True, True, 5000, 5)
+  
+if clientID !=-1:
+    print ('Connected to remote API server')
+   
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "40823242",
+        vrep.simx_opmode_oneshot)
+          
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+          
+    opmode = vrep.simx_opmode_oneshot_wait
+    vrep.simxStartSimulation(clientID, opmode)
+    ret,vertical_handle=vrep.simxGetObjectHandle(clientID,"1",opmode)#設定軸對應名稱
+ 
+    while True:
+        #keyboard "w" 前進
+     if keyboard.is_pressed("w"):
+            print("up")
+            
+            vrep.simxSetJointTargetVelocity(clientID,vertical_handle,-0.01,opmode)
+     if keyboard.is_pressed("s"):#keyboard "s" 後退
+            print("down")
+            
+            vrep.simxSetJointTargetVelocity(clientID,vertical_handle,0.01,opmode)
+ 
+     if keyboard.is_pressed("q"):#keyboard "q" 前進後退停止
+            print("stop")
+            
+            vrep.simxSetJointTargetVelocity(clientID,vertical_handle,0,opmode)
+      
+else:
+    print ('Failed connecting to  remote API server')
+print ('End')</pre>
+<p><span></span></p>
+<p><span style="background-color: #ffff00;">stage1-bg16</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Ua9zBclBMPY" width="560"></iframe></span></p>
+<p><span style="background-color: #ffff00;">stage1-bg24</span></p>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/861JHEgRNk0" width="560"></iframe></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import math
+import random
+import time
+import keyboard
+  
+print ('Start')
+  
+# Close eventual old connections
+vrep.simxFinish(-1)
+# Connect to V-REP remote server
+clientID = vrep.simxStart('192.168.50.217', 19997, True, True, 5000, 5)
+   
+if clientID !=-1:
+    print ('Connected to remote API server')
+    
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "40823204",
+        vrep.simx_opmode_oneshot)
+           
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+           
+    opmode = vrep.simx_opmode_oneshot_wait
+    STREAMING = vrep.simx_opmode_streaming
+      
+    vrep.simxStartSimulation(clientID, opmode)
+     
+     
+    ret,joint0=vrep.simxGetObjectHandle(clientID,"joint0",opmode)
+    ret,joint1=vrep.simxGetObjectHandle(clientID,"joint1",opmode)
+    dy=0
+    dr=0
+    vrep.simxSetJointTargetPosition(clientID,joint0,dy,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint1,dr,opmode)
+     
+    while True:
+        #Clockwise
+        if keyboard.is_pressed("2"):
+            dy=dy-0.1
+            dr=dr+0.1
+            vrep.simxSetJointTargetPosition(clientID,joint0,dy,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint1,dr,opmode)
+            print("go")
+  
+else:
+    print ('Failed connecting to  remote API server')
+    print ('End')</pre>
+<p></p>
+<p><span style="background-color: #ffff00;"></span></p>
+<br />Task2 << <a href='Task2.html'>Previous</a> <a href='Stage 2.html'>Next</a> >> Stage 2</div>
         
     <!-- footer -->
       <div class="container">
