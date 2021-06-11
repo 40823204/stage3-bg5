@@ -2,6 +2,7 @@
         <head>
         <title>stage3-bg5</title>
         <meta charset="utf-8">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -133,18 +134,55 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='每周進度.html'>Next</a> >> 每周進度<br /><h1>首頁</h1>
-<p>小組成員:</p>
-<p><a href="https://github.com/40823204/cd2021">40823204 repo</a>/<a href="https://40823204.github.io/cd2021/content/index.html">40823204 site</a></p>
-<p><a href="https://github.com/40823205/cd2021">40823205 repo</a>/<a href="https://40823205.github.io/cd2021/content/index.html">40823205 site</a></p>
-<p><a href="https://github.com/40823220/cd2021">40823220 repo</a>/<a href="https://40823220.github.io/cd2021/content/index.html">40823220 site</a></p>
-<p><a href="https://github.com/40823221/cd2021">40823221 repo</a>/<a href="https://40823221.github.io/cd2021/content/index.html">40823221 site</a></p>
-<p><a href="https://github.com/40823228/cd2021">40823228 repo</a>/<a href="https://40823228.github.io/cd2021/content/index.html">40823228 site</a></p>
-<p><a href="https://github.com/40823237/cd2021">40823237 repo</a>/<a href="https://40823237.github.io/cd2021/content/index.html">40823237 site</a></p>
-<p><a href="https://github.com/40823242/cd2021">40823242 repo</a>/<a href="https://40823242.github.io/cd2021/content/index.html">40823242 site</a></p>
-<p><a href="https://github.com/40823250/cd2021">40823250 repo</a>/<a href="https://40823250.github.io/cd2021/content/index.html">40823250 site</a></p>
-<p><a href="https://github.com/40832244/cd2021">40832244 repo</a>/<a href="https://40832244.github.io/cd2021/content/index.html">40832244 site</a></p>
-<br /> <a href='每周進度.html'>Next</a> >> 每周進度</div>
+    <div id="tipue_search_content">coppelia啟動教學 << <a href='coppelia啟動教學.html'>Previous</a> <br /><h1>lua語法和按鍵介紹</h1>
+<p><strong>1.XXX=sim.getObjectHandle('joint')</strong></p>
+<p><span>說明:XXX是可以自己定義的名詞，此指令定義XXX為一個連接軸，('joint')為該軸在場景裡面的名稱</span></p>
+<p><strong>2.sim.setJointTargetPosition(XXX,90)</strong></p>
+<p>說明: XXX移動至90這個位置，或旋轉至90rad</p>
+<p><code class="py plain">若此為一自轉軸要將程式寫為sim.setJointTargetPosition(XXX,0</code><code class="py keyword">*</code><code class="py plain">math.pi</code><code class="py keyword">/</code><code class="py value">180</code><code class="py plain">)</code></p>
+<p><strong><code class="py plain">3.常用LUA按鍵控制代碼介紹</code></strong></p>
+<table width="494">
+<tbody>
+<tr style="height: 15px;">
+<td style="width: 117.164px; height: 15px;">按鍵</td>
+<td style="width: 117.164px; height: 15px;">使用代碼</td>
+<td style="width: 117.164px; height: 15px;"><span>按鍵</span></td>
+<td style="width: 117.176px; height: 15px;"><span>使用代碼</span></td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 117.164px; height: 15px;">按鍵上</td>
+<td style="width: 117.164px; height: 15px;">2007</td>
+<td style="width: 117.164px; height: 15px;">1</td>
+<td style="width: 117.176px; height: 15px;">49</td>
+</tr>
+<tr style="height: 15.4792px;">
+<td style="width: 117.164px; height: 15.4792px;"><span>按鍵下</span></td>
+<td style="width: 117.164px; height: 15.4792px;">2008</td>
+<td style="width: 117.164px; height: 15.4792px;">2</td>
+<td style="width: 117.176px; height: 15.4792px;">50</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 117.164px; height: 15px;"><span>按鍵左</span></td>
+<td style="width: 117.164px; height: 15px;">2009</td>
+<td style="width: 117.164px; height: 15px;">3</td>
+<td style="width: 117.176px; height: 15px;">51</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 117.164px; height: 15px;"><span>按鍵右</span></td>
+<td style="width: 117.164px; height: 15px;">2010</td>
+<td style="width: 117.164px; height: 15px;">4</td>
+<td style="width: 117.176px; height: 15px;">52</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 117.164px; height: 15px;"><span>空白鍵</span></td>
+<td style="width: 117.164px; height: 15px;">32</td>
+<td style="width: 117.164px; height: 15px;"></td>
+<td style="width: 117.176px; height: 15px;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong></strong></p>
+<p></p><br />coppelia啟動教學 << <a href='coppelia啟動教學.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">

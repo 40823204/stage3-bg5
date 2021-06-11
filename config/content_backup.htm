@@ -119,6 +119,7 @@
 <p><img alt="" height="200" src="/images/coppeliaSim_XRVj15bLQG.png" width="300"/></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/ezSKHlxZ1FI" title="YouTube video player" width="560"></iframe></p>
 <h2>W15coppelia模擬</h2>
+<p>場景ttt檔和py檔可至:<a href="https://40823204.github.io/cd2021/content/coppeliasim.html">40823204</a>下載</p>
 <p>作品進度:將程式用lua改為python remote api 控制</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/VkEcGY76lNA" title="YouTube video player" width="560"></iframe></p>
 <p><strong>按鍵指令</strong></p>
@@ -479,3 +480,61 @@ else:
 <h2>Stage 3</h2>
 <p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; e793fcf1540d71475a976f62fa71b3607719897f</p>
 <h1>筆記</h1>
+<h2>coppelia啟動教學</h2>
+<p>如何開啟stl檔及基本教學</p>
+<p>1.打開coppeliasim</p>
+<p>2.點選File&gt;Import&gt;Mesh&gt;選擇要打開的檔案</p>
+<p><img alt="" height="200" src="/images/coppeliaSim_5L815QNqGK.png" width="300"/></p>
+<p>3.出現import options可自行選擇y或z軸&gt;點選import即可叫出檔案</p>
+<p><img alt="" height="300" src="/images/coppeliaSim_PKtjcHyc4c.png" width="203"/></p>
+<p>4.開啟後場景</p>
+<p><img alt="" height="200" src="/images/coppeliaSim_IuMvTnVxZk.png" width="300"/></p>
+<h2>lua語法和按鍵介紹</h2>
+<p><strong>1.XXX=sim.getObjectHandle('joint')</strong></p>
+<p><span>說明:XXX為一自行定義的名詞，此指令定義XXX為一個連接軸，而('joint')為該軸在場景裡面的名稱</span></p>
+<p><strong>2.sim.setJointTargetPosition(XXX,90)</strong></p>
+<p>說明: XXX移動至90這個位置，或旋轉至90rad</p>
+<p><code class="py plain">若此為一自轉軸要將程式寫為sim.setJointTargetPosition(XXX,0</code><code class="py keyword">*</code><code class="py plain">math.pi</code><code class="py keyword">/</code><code class="py value">180</code><code class="py plain">)</code></p>
+<p><strong><code class="py plain">3.常用LUA按鍵控制代碼介紹</code></strong></p>
+<table width="494">
+<tbody>
+<tr style="height: 15px;">
+<td style="width: 117.164px; height: 15px;">按鍵</td>
+<td style="width: 117.164px; height: 15px;">使用代碼</td>
+<td style="width: 117.164px; height: 15px;"><span>按鍵</span></td>
+<td style="width: 117.176px; height: 15px;"><span>使用代碼</span></td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 117.164px; height: 15px;">按鍵上</td>
+<td style="width: 117.164px; height: 15px;">2007</td>
+<td style="width: 117.164px; height: 15px;">1</td>
+<td style="width: 117.176px; height: 15px;">49</td>
+</tr>
+<tr style="height: 15.4792px;">
+<td style="width: 117.164px; height: 15.4792px;"><span>按鍵下</span></td>
+<td style="width: 117.164px; height: 15.4792px;">2008</td>
+<td style="width: 117.164px; height: 15.4792px;">2</td>
+<td style="width: 117.176px; height: 15.4792px;">50</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 117.164px; height: 15px;"><span>按鍵左</span></td>
+<td style="width: 117.164px; height: 15px;">2009</td>
+<td style="width: 117.164px; height: 15px;">3</td>
+<td style="width: 117.176px; height: 15px;">51</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 117.164px; height: 15px;"><span>按鍵右</span></td>
+<td style="width: 117.164px; height: 15px;">2010</td>
+<td style="width: 117.164px; height: 15px;">4</td>
+<td style="width: 117.176px; height: 15px;">52</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 117.164px; height: 15px;"><span>空白鍵</span></td>
+<td style="width: 117.164px; height: 15px;">32</td>
+<td style="width: 117.164px; height: 15px;"></td>
+<td style="width: 117.176px; height: 15px;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong></strong></p>
+<p></p>
