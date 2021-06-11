@@ -136,7 +136,119 @@ img.add_border {
         </header>
     <div id="tipue_search_content">w14 << <a href='w14.html'>Previous</a> <a href='每周進度.html'>Next</a> >> 每周進度<br /><h1>w15</h1>
 <p>作品進度:將程式用lua改為python remote api 控制</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/VkEcGY76lNA" title="YouTube video player" width="560"></iframe></p><br />w14 << <a href='w14.html'>Previous</a> <a href='每周進度.html'>Next</a> >> 每周進度</div>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/VkEcGY76lNA" title="YouTube video player" width="560"></iframe></p>
+<p><strong>按鍵指令</strong></p>
+<p>"1-4"控制輪子轉彎方向</p>
+<p>"w" 蝸桿蝸輪控制車體向上</p>
+<p>"d"<span>蝸桿蝸輪控制車體向下</span></p>
+<p>"a"車子向前</p>
+<p><span>"d"車子向前後</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import sim as vrep
+import math
+import random
+import time
+import keyboard
+ 
+print ('Start')
+ 
+# Close eventual old connections
+vrep.simxFinish(-1)
+# Connect to V-REP remote server
+clientID = vrep.simxStart('192.168.50.217', 19997, True, True, 5000, 5)
+  
+if clientID !=-1:
+    print ('Connected to remote API server')
+   
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "40823204",
+        vrep.simx_opmode_oneshot)
+          
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+          
+    opmode = vrep.simx_opmode_oneshot_wait
+    STREAMING = vrep.simx_opmode_streaming
+     
+    vrep.simxStartSimulation(clientID, opmode)
+    
+    
+    ret,joint=vrep.simxGetObjectHandle(clientID,"joint",opmode)
+    ret,joint2=vrep.simxGetObjectHandle(clientID,"joint2",opmode)
+    ret,joint5=vrep.simxGetObjectHandle(clientID,"joint5",opmode)
+    ret,joint3=vrep.simxGetObjectHandle(clientID,"joint3",opmode)
+    ret,joint4=vrep.simxGetObjectHandle(clientID,"joint4",opmode)
+    ds=0
+    dff=0
+    df=0
+    db=0
+    dbb=0
+    vrep.simxSetJointTargetPosition(clientID,joint,ds,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint2,dff,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint5,df,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint3,db,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint4,dbb,opmode)
+    
+    while True:
+        #Clockwise
+        if keyboard.is_pressed("w"):
+            ds=ds-0.01
+            vrep.simxSetJointTargetPosition(clientID,joint,ds,opmode)
+            print("up")
+        if keyboard.is_pressed("s"):
+            ds=ds+0.01
+            vrep.simxSetJointTargetPosition(clientID,joint,ds,opmode)
+            print("down")
+        if keyboard.is_pressed("a"):
+            df=df+0.2
+            db=db+0.2
+            dff=dff+0.2
+            dbb=dbb+0.2
+            vrep.simxSetJointTargetPosition(clientID,joint2,dff,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint5,df,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint3,db,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint4,dbb,opmode)
+            print("left")
+        if keyboard.is_pressed("d"):
+            df=df-0.2
+            db=db-0.2
+            dff=dff-0.2
+            dbb=dbb-0.2
+            vrep.simxSetJointTargetPosition(clientID,joint2,dff,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint5,df,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint3,db,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint4,dbb,opmode)
+            print("right")
+        if keyboard.is_pressed("1"):
+            df=df-0.2
+            db=db-0.2
+            vrep.simxSetJointTargetPosition(clientID,joint5,df,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint3,db,opmode)
+            print("1") 
+        if keyboard.is_pressed("2"):
+            dff=dff-0.2
+            dbb=dbb-0.2
+            vrep.simxSetJointTargetPosition(clientID,joint2,dff,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint4,dbb,opmode)
+            print("2") 
+        if keyboard.is_pressed("3"):
+            df=df+0.2
+            db=db+0.2
+            vrep.simxSetJointTargetPosition(clientID,joint5,df,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint3,db,opmode)
+            print("3") 
+        if keyboard.is_pressed("4"):
+            dff=dff+0.2
+            dbb=dbb+0.2
+            vrep.simxSetJointTargetPosition(clientID,joint2,dff,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint4,dbb,opmode)
+            print("4")     
+            
+              
+else:
+    print ('Failed connecting to  remote API server')
+    print ('End')</pre>
+<p></p><br />w14 << <a href='w14.html'>Previous</a> <a href='每周進度.html'>Next</a> >> 每周進度</div>
         
     <!-- footer -->
       <div class="container">
