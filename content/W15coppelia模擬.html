@@ -123,7 +123,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='stage3.html'>stage3</a><ul class='dropdown'><li><a href='w12-13.html'>w12-13</a><li><a href='w14.html'>w14</a><li><a href='w15.html'>w15</a></li></ul><li class='has-children'><a href='每周進度.html'>每周進度</a><ul class='dropdown'><li class='has-children'><a href='W10 新增Stage1、2 工作分配.html'>W10 新增Stage1、2 工作分配</a><ul class='dropdown'><li><a href='stage1.html'>stage1</a><li><a href='stage2.html'>stage2</a></li></ul><li><a href='W11 直播影片.html'>W11 直播影片</a><li><a href='W12 直播影片.html'>W12 直播影片</a><li><a href='W13 機械手臂控制、程式控制攀爬機.html'>W13 機械手臂控制、程式控制攀爬機</a><li><a href='W14-1.html'>W14-1</a><li><a href='W15-1.html'>W15-1</a></li></ul><li class='has-children'><a href='影片.html'>影片</a><ul class='dropdown'><li><a href='W12.html'>W12</a><li><a href='W13.html'>W13</a><li><a href='W14-2.html'>W14-2</a><li><a href='W15-2.html'>W15-2</a></li></ul><li class='has-children'><a href='Task2.html'>Task2</a><ul class='dropdown'><li><a href='Stage 1.html'>Stage 1</a><li><a href='Stage 2.html'>Stage 2</a><li><a href='Stage 3.html'>Stage 3</a></li>
+                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='每周進度.html'>每周進度</a><ul class='dropdown'><li class='has-children'><a href='W10 新增Stage1、2 工作分配.html'>W10 新增Stage1、2 工作分配</a><ul class='dropdown'><li><a href='stage1.html'>stage1</a><li><a href='stage2.html'>stage2</a></li></ul><li><a href='W11 直播影片.html'>W11 直播影片</a><li><a href='W12 直播影片.html'>W12 直播影片</a><li><a href='W13 機械手臂控制、程式控制攀爬機.html'>W13 機械手臂控制、程式控制攀爬機</a><li><a href='W12-13coppelia模擬.html'>W12-13coppelia模擬</a><li><a href='W14coppelia模擬.html'>W14coppelia模擬</a><li><a href='W15coppelia模擬.html'>W15coppelia模擬</a></li></ul><li class='has-children'><a href='影片.html'>影片</a><ul class='dropdown'><li><a href='W12.html'>W12</a><li><a href='W13.html'>W13</a><li><a href='W14.html'>W14</a><li><a href='W15.html'>W15</a></li></ul><li class='has-children'><a href='Task2.html'>Task2</a><ul class='dropdown'><li><a href='Stage 1.html'>Stage 1</a><li><a href='Stage 2.html'>Stage 2</a><li><a href='Stage 3.html'>Stage 3</a></li></ul><li><a href='筆記.html'>筆記</a></li>
                       </ul>
                 </nav>
               </div>
@@ -134,12 +134,121 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">stage3 << <a href='stage3.html'>Previous</a> <a href='w14.html'>Next</a> >> w14<br /><h1>w12-13</h1>
-<p>小組作品進度</p>
-<p>使用coppeliasim做初步模擬+lua控制</p>
-<p>說明:在場景中做初步的零件連接，並利用lua控制車子前進，但因為連接軸的問題，車子目前只能做前後移動和上下調整角度</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/1p7-JPmSXnQ" title="YouTube video player" width="560"></iframe></p>
-<br />stage3 << <a href='stage3.html'>Previous</a> <a href='w14.html'>Next</a> >> w14</div>
+    <div id="tipue_search_content">W14coppelia模擬 << <a href='W14coppelia模擬.html'>Previous</a> <a href='影片.html'>Next</a> >> 影片<br /><h1>W15coppelia模擬</h1>
+<p>場景ttt檔和py檔可至:<a href="https://40823204.github.io/cd2021/content/coppeliasim.html">40823204</a>下載</p>
+<p>作品進度:將程式用lua改為python remote api 控制</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/VkEcGY76lNA" title="YouTube video player" width="560"></iframe></p>
+<p><strong>按鍵指令</strong></p>
+<p>"1-4"控制輪子轉彎方向</p>
+<p>"w" 蝸桿蝸輪控制車體向上</p>
+<p>"d"<span>蝸桿蝸輪控制車體向下</span></p>
+<p>"a"車子向前</p>
+<p><span>"d"車子向前後</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import sim as vrep
+import math
+import random
+import time
+import keyboard
+ 
+print ('Start')
+ 
+# Close eventual old connections
+vrep.simxFinish(-1)
+# Connect to V-REP remote server
+clientID = vrep.simxStart('192.168.50.217', 19997, True, True, 5000, 5)
+  
+if clientID !=-1:
+    print ('Connected to remote API server')
+   
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "40823204",
+        vrep.simx_opmode_oneshot)
+          
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+          
+    opmode = vrep.simx_opmode_oneshot_wait
+    STREAMING = vrep.simx_opmode_streaming
+     
+    vrep.simxStartSimulation(clientID, opmode)
+    
+    
+    ret,joint=vrep.simxGetObjectHandle(clientID,"joint",opmode)
+    ret,joint2=vrep.simxGetObjectHandle(clientID,"joint2",opmode)
+    ret,joint5=vrep.simxGetObjectHandle(clientID,"joint5",opmode)
+    ret,joint3=vrep.simxGetObjectHandle(clientID,"joint3",opmode)
+    ret,joint4=vrep.simxGetObjectHandle(clientID,"joint4",opmode)
+    ds=0
+    dff=0
+    df=0
+    db=0
+    dbb=0
+    vrep.simxSetJointTargetPosition(clientID,joint,ds,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint2,dff,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint5,df,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint3,db,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint4,dbb,opmode)
+    
+    while True:
+        #Clockwise
+        if keyboard.is_pressed("w"):
+            ds=ds-0.01
+            vrep.simxSetJointTargetPosition(clientID,joint,ds,opmode)
+            print("up")
+        if keyboard.is_pressed("s"):
+            ds=ds+0.01
+            vrep.simxSetJointTargetPosition(clientID,joint,ds,opmode)
+            print("down")
+        if keyboard.is_pressed("a"):
+            df=df+0.2
+            db=db+0.2
+            dff=dff+0.2
+            dbb=dbb+0.2
+            vrep.simxSetJointTargetPosition(clientID,joint2,dff,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint5,df,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint3,db,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint4,dbb,opmode)
+            print("left")
+        if keyboard.is_pressed("d"):
+            df=df-0.2
+            db=db-0.2
+            dff=dff-0.2
+            dbb=dbb-0.2
+            vrep.simxSetJointTargetPosition(clientID,joint2,dff,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint5,df,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint3,db,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint4,dbb,opmode)
+            print("right")
+        if keyboard.is_pressed("1"):
+            df=df-0.2
+            db=db-0.2
+            vrep.simxSetJointTargetPosition(clientID,joint5,df,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint3,db,opmode)
+            print("1") 
+        if keyboard.is_pressed("2"):
+            dff=dff-0.2
+            dbb=dbb-0.2
+            vrep.simxSetJointTargetPosition(clientID,joint2,dff,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint4,dbb,opmode)
+            print("2") 
+        if keyboard.is_pressed("3"):
+            df=df+0.2
+            db=db+0.2
+            vrep.simxSetJointTargetPosition(clientID,joint5,df,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint3,db,opmode)
+            print("3") 
+        if keyboard.is_pressed("4"):
+            dff=dff+0.2
+            dbb=dbb+0.2
+            vrep.simxSetJointTargetPosition(clientID,joint2,dff,opmode)
+            vrep.simxSetJointTargetPosition(clientID,joint4,dbb,opmode)
+            print("4")     
+            
+              
+else:
+    print ('Failed connecting to  remote API server')
+    print ('End')</pre><br />W14coppelia模擬 << <a href='W14coppelia模擬.html'>Previous</a> <a href='影片.html'>Next</a> >> 影片</div>
         
     <!-- footer -->
       <div class="container">
