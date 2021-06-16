@@ -400,7 +400,7 @@ vertical: body pane on the botton</t>
     &lt;/section&gt;</t>
 <t tx="leo.20200818171412.1"> &lt;section&gt;
     &lt;h2&gt;PDF檔案&lt;/h2&gt;
-   &lt;p&gt;&lt;span&gt;&lt;/span&gt;1.PDF檔案:&lt;a href="https://drive.google.com/file/d/161wup0sdlnYtTcgYr0djx1WULFEW22HG/view?usp=sharing"&gt;點此下載&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;&lt;span&gt;&lt;/span&gt;1.PDF檔案:&lt;a href="https://drive.google.com/file/d/1XCyOQ2okME4B4KzgfPcg86DB23c_pZMI/view?usp=sharing"&gt;點此下載&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;</t>
 <t tx="leo.20200818194721.1"> &lt;section&gt;
    &lt;section&gt;
