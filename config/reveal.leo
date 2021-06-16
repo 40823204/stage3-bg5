@@ -385,7 +385,6 @@ vertical: body pane on the botton</t>
    &lt;h3&gt;各人員將stag1及stage2加上lua或python remote api 控制&lt;/h3&gt;
     &lt;/section&gt;</t>
 <t tx="leo.20200818171312.1">&lt;section&gt;
-   &lt;section&gt;
    &lt;h2&gt;CoppeliaSimEdu_4.1.0模擬&lt;/h2&gt;
 &lt;/section&gt;</t>
 <t tx="leo.20200818171344.1">&lt;section&gt;
