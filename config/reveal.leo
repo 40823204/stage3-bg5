@@ -49,10 +49,20 @@
 <v t="123.20210616160333.1"><vh>slide 9-4</vh></v>
 <v t="123.20210616160337.1"><vh>slide 9-5</vh></v>
 <v t="123.20210616160341.1"><vh>slide 9-6</vh></v>
-<v t="123.20210616160344.1"><vh>slide 9-7</vh></v>
 </v>
 <v t="leo.20200818171412.1"><vh>slide 10</vh></v>
-<v t="leo.20200818194721.1"><vh>slide 11</vh></v>
+<v t="leo.20200818194721.1"><vh>slide 11</vh>
+<v t="123.20210616161635.1"><vh>slide 11-1</vh></v>
+<v t="123.20210616161644.1"><vh>slide 11-2</vh></v>
+<v t="123.20210616161651.1"><vh>slide 11-3</vh></v>
+<v t="123.20210616161656.1"><vh>slide 11-4</vh></v>
+<v t="123.20210616161659.1"><vh>slide 11-5</vh></v>
+<v t="123.20210616161703.1"><vh>slide 11-6</vh></v>
+<v t="123.20210616161710.1"><vh>slide 11-7</vh></v>
+<v t="123.20210616161716.1"><vh>slide 11-8</vh></v>
+</v>
+<v t="123.20210616162305.1"><vh>slide 12</vh></v>
+<v t="123.20210616162635.1"><vh>slide 13</vh></v>
 </v>
 </v>
 </v>
@@ -126,14 +136,83 @@
     &lt;/section&gt;
 &lt;/section&gt;</t>
 <t tx="123.20210616160314.1">   &lt;section&gt;
+   &lt;h4&gt;40823220 40823250主題:Task2、ipv4講解、作品的圖檔進度及講解和參考資料&lt;/h4&gt;
    &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7dUx6LlgXMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
     &lt;/section&gt;</t>
-<t tx="123.20210616160327.1"></t>
-<t tx="123.20210616160330.1"></t>
-<t tx="123.20210616160333.1"></t>
-<t tx="123.20210616160337.1"></t>
-<t tx="123.20210616160341.1"></t>
-<t tx="123.20210616160344.1"></t>
+<t tx="123.20210616160327.1">   &lt;section&gt;
+   &lt;h3&gt;W13&lt;/h3&gt;
+   &lt;h4&gt;40823205 40823228主題:解決CMSIMDE版本錯誤&lt;/h4&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/sm5dSwAz2Z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;</t>
+<t tx="123.20210616160330.1">   &lt;section&gt;
+   &lt;h4&gt;40823220 40823250主題:介紹inventor及 reveal教學&lt;/h4&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/9L3157sRr2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;</t>
+<t tx="123.20210616160333.1">   &lt;section&gt;
+   &lt;h3&gt;W14&lt;/h3&gt;
+   &lt;h4&gt;第一次直播&lt;/h4&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/npptDs_cz78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;</t>
+<t tx="123.20210616160337.1">   &lt;section&gt;
+   &lt;h4&gt;第二次直播&lt;/h4&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/SOV4d6DmCEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;</t>
+<t tx="123.20210616160341.1">   &lt;section&gt;
+   &lt;h3&gt;W15&lt;/h3&gt;
+   &lt;h4&gt;第三次直播&lt;/h4&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/mDPnTY_19A0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/section&gt;</t>
+<t tx="123.20210616161635.1">    &lt;section&gt;
+    &lt;h2&gt;40823205心得&lt;/h2&gt;
+    &lt;h10&gt;後期因為github被鎖讓我摸索了很久，還是沒辦法解封，還好之後有fossil能夠讓我再呈現我的網站出來，只是比較麻煩一點點而已，在這學期真的學到了很多東西，主要是CoppeliaSim，一開始看到是全英文讓我感到很害怕，但後來慢慢摸索就有懂一些了，英文真的很重要。在w16的考試多虧有同學的幫助也學到了很多，雖然我的程式一直模擬不出來，但我還是反覆的做跟思考如何解決，並求助同學的幫忙，也謝謝組員們的幫助。&lt;/h10&gt;
+    &lt;/section&gt;
+</t>
+<t tx="123.20210616161644.1">    &lt;section&gt;
+    &lt;h2&gt;40823220心得&lt;/h2&gt;
+    &lt;h10&gt;經過這學期的洗禮，我學會了是CoppeliaSim以及Onshape這兩套軟體，還有Lua跟Py thon程式的基本認知，還有更多的附加知識，例如Youtobe的剪片上字幕，產品商業化會遇到的問題等等，但最重要的就是團隊合作，多虧了跟我同組的隊友，讓我們整體的工作，對每個人的負擔都減輕很多，對於我自己分內的工作，我也會盡力的去完成，我在這個團體裡負責的工作，主要就是處理圖檔的部分，依照組員討論出來，產品的外觀，去把它繪製出來，並且不斷地更新，我很榮幸，能為團隊帶來貢獻，這真的是很有成就感的事。最後到了期末，老師出了5個測驗給我們做，對我來說，單靠我自己的力量去完成真的是有難度的，但我們班厲害的一點就是很團結，而這位14號同學，也很有愛心跟耐心，大家群組邀一邀，就來個30人協同教學，把大家都教會，這種感覺真的很棒，真的是我全新的體驗，可以說是協同的最高境界。&lt;/h10&gt;
+    &lt;/section&gt;
+</t>
+<t tx="123.20210616161651.1">    &lt;section&gt;
+    &lt;h2&gt;40823221心得&lt;/h2&gt;
+    &lt;h10&gt;這學期分成了三個階段，在每一個階段都有學到東西，最後在w16 exam裡面也算是對個人能力做個小測試，所以這學期能學到的絕對不只是程式語言或是CoppeliaSim模擬這幾樣東西而已，反而可以學到該如何分工或是與團隊溝通等等的。最後想學程式的話英文真的滿重要的。&lt;/h10&gt;
+    &lt;/section&gt;
+</t>
+<t tx="123.20210616161656.1">    &lt;section&gt;
+    &lt;h2&gt;40823228心得&lt;/h2&gt;
+    &lt;h4&gt;&lt;/h4&gt;
+    &lt;/section&gt;
+</t>
+<t tx="123.20210616161659.1">    &lt;section&gt;
+    &lt;h2&gt;40823237心得&lt;/h2&gt;
+    &lt;h10&gt;這學期的課程讓我知道學習寫程式的邏輯還有模擬很重要，因為可以方便做很多的事情，但英文更重要，看不懂英文要怎麼學程式語言呢，要釣魚也要先學會用釣竿。再來就是團隊合作的部分，主動、肯吃苦的人可能會辛苦一點，但收穫肯定也會跟辛苦、努力的程度成正比，那些消極的人沒收穫是他們的損失，抄來的終究是別人的。最後，謝謝老師的耐心指導，很多時候問老師問題，老師都不僅僅處理問題而已，還會花時間跟我們講解問題的根本及分享在程式裡的一些知識。&lt;/h10&gt;
+    &lt;/section&gt;
+</t>
+<t tx="123.20210616161703.1">    &lt;section&gt;
+    &lt;h2&gt;40823242心得&lt;/h2&gt;
+    &lt;h4&gt;&lt;/h4&gt;
+    &lt;/section&gt;
+</t>
+<t tx="123.20210616161710.1">    &lt;section&gt;
+    &lt;h2&gt;40823250心得&lt;/h2&gt;
+    &lt;h10&gt;透過這學期的課程，在學習程式與軟體應用中必須花費相當多的心力及思考，其中團隊的幫助下，每個人分工合作達到盡自己所能在讓團隊進步，我也知道說在這當中我受別人的幫助算是較多的那位，但也沒有因為較弱而放棄對程式的了解，那麼8人的任務確實跟2人與4人沒法比，許多人也是一起在線上學習，不敢說學到多少，至少在過程中都是盡可能試著去明白其中道理，˙也謝謝各位在這期間的幫助及努力，為這小團隊做了很多，老師也是不急不徐地指導我們該往哪個方向去前進，利用測驗檢測這學期的成果，小弟我在這裡先跟大家說聲辛苦了你們超棒!&lt;/h10&gt;
+    &lt;/section&gt;
+</t>
+<t tx="123.20210616161716.1">    &lt;section&gt;
+    &lt;h2&gt;40832244心得&lt;/h2&gt;
+    &lt;h10&gt;這學期學到了不少的新知識，但除了前兩次的協同分組能提供大家一些協助，在最後一次的8人協同我已經如同沒有貢獻一樣，只能跟在大家屁股後面學習!在W16我學到了不少東西，但我的進度還有點落後，我得加緊跟上班上同學才行。或許我的進度以及程度我相對其他同學來說相當落後，看起來對團隊沒有貢獻，但我會開啟電腦照著別人的操作一步一步跟著做，總比那些電腦塵封已久的人來的上進。最後比較可惜的是我的github被鎖，到現在經過我無數次的發送gmail和意見反饋但還是無法解封，現在我很擔心我的成績不知道我還有沒有救…。最後謝謝老師以及很不幸跟我同組的同學，加重你們的工作量有很抱歉，也謝謝一路上幫助我課業的同學，在我的學習進度上提供了相當大的協助。&lt;/h10&gt;
+    &lt;/section&gt;
+&lt;/section&gt;
+</t>
+<t tx="123.20210616162305.1">&lt;section&gt;
+     &lt;h5&gt;參考資料來源&lt;/h5&gt;
+     &lt;h6&gt;&lt;a href="https://www.youtube.com/watch?v=MwHHErfX9hI"&gt;https://www.youtube.com/watch?v=MwHHErfX9hI&lt;/a&gt;&lt;/h6&gt;
+     &lt;h6&gt;&lt;a href="https://read01.com/azR3J4Q.html#.YMm2HqgzaUk"&gt;https://read01.com/azR3J4Q.html#.YMm2HqgzaUk&lt;/a&gt;&lt;/h6&gt;
+     &lt;h6&gt;&lt;a href="https://kknews.cc/zh-tw/news/eopknyy.html"&gt;https://kknews.cc/zh-tw/news/eopknyy.html&lt;/a&gt;&lt;/h6&gt;
+&lt;/section&gt;</t>
+<t tx="123.20210616162635.1">&lt;section&gt;
+    &lt;h1&gt;報告結束 謝謝大家&lt;/h1&gt;
+&lt;/section&gt;</t>
 <t tx="leo.20180902120523.1"></t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120538.1"></t>
@@ -313,26 +392,17 @@ vertical: body pane on the botton</t>
    &lt;section&gt;
    &lt;h2&gt;直播影片&lt;/h2&gt;
    &lt;h3&gt;W12&lt;/h3&gt;
+   &lt;h4&gt;40823221 40823237 主題: ipv4操作api&lt;/h4&gt;
    &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/T2CSmVCGPLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7dUx6LlgXMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
     &lt;/section&gt;</t>
-<t tx="leo.20200818171412.1">&lt;section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"&gt;
-    &lt;div class="r-stack"&gt;
-        &lt;div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"&gt;&lt;/div&gt;
-        &lt;div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"&gt;&lt;/div&gt;
-        &lt;div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;h2 style="margin-top: 20px;"&gt;Auto-Animate&lt;/h2&gt;
-&lt;/section&gt;
-
-</t>
-<t tx="leo.20200818194721.1">&lt;section&gt;
-    &lt;h2&gt;Touch Optimized&lt;/h2&gt;
-    &lt;p&gt;
-        Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-    &lt;/p&gt;
-&lt;/section&gt;
-
-</t>
+<t tx="leo.20200818171412.1"> &lt;section&gt;
+    &lt;h2&gt;PDF檔案&lt;/h2&gt;
+   &lt;p&gt;&lt;span&gt;&lt;/span&gt;1.PDF檔案:&lt;a href="https://drive.google.com/file/d/161wup0sdlnYtTcgYr0djx1WULFEW22HG/view?usp=sharing"&gt;點此下載&lt;/a&gt;&lt;/p&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20200818194721.1"> &lt;section&gt;
+   &lt;section&gt;
+   &lt;h2&gt;40823204心得&lt;/h2&gt;
+   &lt;h10&gt;這學期學到了很多工具，包含coppelia場景的建立以及許多程式的寫法，原本以為自己完蛋了，因為高中只學過如何畫圖卻沒接觸過程式和coppelia這套工具，但是有努力終有成果，經過這幾週的洗禮，我也熟悉了這些操作，然後在程式的部分我還有不足處，還需要去學習，同時也很感謝40823214教了我許多。&lt;/h10&gt;
+   &lt;/section&gt;</t>
 </tnodes>
 </leo_file>
