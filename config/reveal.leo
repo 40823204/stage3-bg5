@@ -387,7 +387,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20200818171312.1">&lt;section&gt;
    &lt;section&gt;
    &lt;h2&gt;CoppeliaSimEdu_4.1.0模擬&lt;/h2&gt;
- &lt;/section&gt;</t>
+&lt;/section&gt;</t>
 <t tx="leo.20200818171344.1">&lt;section&gt;
    &lt;section&gt;
    &lt;h2&gt;直播影片&lt;/h2&gt;
