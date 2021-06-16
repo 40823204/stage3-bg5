@@ -34,9 +34,23 @@
 <v t="123.20210616143203.1"><vh>slide 5 -4</vh></v>
 <v t="123.20210616143207.1"><vh>slide 5 -5</vh></v>
 </v>
-<v t="leo.20200818171244.1"><vh>slide 7 </vh></v>
+<v t="leo.20200818171244.1"><vh>slide 7 </vh>
+<v t="123.20210616153419.1"><vh>slide 7 -1</vh></v>
+<v t="123.20210616153431.1"><vh>slide 7 -2</vh></v>
+<v t="123.20210616153436.1"><vh>slide 7 -3</vh></v>
+<v t="123.20210616153440.1"><vh>slide 7 -4</vh></v>
+<v t="123.20210616154431.1"><vh>slide 7 -5</vh></v>
+</v>
 <v t="leo.20200818171312.1"><vh>slide 8</vh></v>
-<v t="leo.20200818171344.1"><vh>slide 9</vh></v>
+<v t="leo.20200818171344.1"><vh>slide 9</vh>
+<v t="123.20210616160314.1"><vh>slide 9-1</vh></v>
+<v t="123.20210616160327.1"><vh>slide 9-2</vh></v>
+<v t="123.20210616160330.1"><vh>slide 9-3</vh></v>
+<v t="123.20210616160333.1"><vh>slide 9-4</vh></v>
+<v t="123.20210616160337.1"><vh>slide 9-5</vh></v>
+<v t="123.20210616160341.1"><vh>slide 9-6</vh></v>
+<v t="123.20210616160344.1"><vh>slide 9-7</vh></v>
+</v>
 <v t="leo.20200818171412.1"><vh>slide 10</vh></v>
 <v t="leo.20200818194721.1"><vh>slide 11</vh></v>
 </v>
@@ -85,6 +99,41 @@
    &lt;h2&gt;零件圖說明&lt;/h2&gt;
    &lt;p&gt;零件檔載點:&lt;a href="https://40823220.github.io/cd2021/downloads/Desktop.rar"&gt;零件檔&lt;/a&gt;&lt;/p&gt;
     &lt;/section&gt;</t>
+<t tx="123.20210616153419.1">   &lt;section&gt;
+   &lt;h2&gt;stage1-bg14&lt;/h2&gt;
+   &lt;h3&gt;成員:40823228、40823242&lt;/h3&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Ex3o115nqDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;</t>
+<t tx="123.20210616153431.1">   &lt;section&gt;
+   &lt;h2&gt;stage1-bg16&lt;/h2&gt;
+   &lt;h3&gt;成員:40823221、40823237&lt;/h3&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Ua9zBclBMPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;</t>
+<t tx="123.20210616153436.1">   &lt;section&gt;
+   &lt;h2&gt;stage1-bg24&lt;/h2&gt;
+   &lt;h3&gt;成員:40823204、40823220&lt;/h3&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/861JHEgRNk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;</t>
+<t tx="123.20210616153440.1">   &lt;section&gt;
+   &lt;h2&gt;stage2-bg12&lt;/h2&gt;
+   &lt;h3&gt;成員:40823221、40823237、40823250、40832244&lt;/h3&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/MsF1WQpAa04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;</t>
+<t tx="123.20210616154431.1">   &lt;section&gt;
+   &lt;h2&gt;stage2-bg12&lt;/h2&gt;
+   &lt;h3&gt;成員:40823204、40823205、40823220、40823228、40823242&lt;/h3&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/H0m3scUj7iM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/section&gt;</t>
+<t tx="123.20210616160314.1">   &lt;section&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7dUx6LlgXMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;</t>
+<t tx="123.20210616160327.1"></t>
+<t tx="123.20210616160330.1"></t>
+<t tx="123.20210616160333.1"></t>
+<t tx="123.20210616160337.1"></t>
+<t tx="123.20210616160341.1"></t>
+<t tx="123.20210616160344.1"></t>
 <t tx="leo.20180902120523.1"></t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120538.1"></t>
@@ -252,38 +301,21 @@ vertical: body pane on the botton</t>
    &lt;h3&gt;繪圖者:40823220&lt;/h3&gt;
     &lt;/section&gt;</t>
 <t tx="leo.20200818171244.1">&lt;section&gt;
-    &lt;h2&gt;Point of View&lt;/h2&gt;
-    &lt;p&gt;
-        Press &lt;strong&gt;ESC&lt;/strong&gt; to enter the slide overview.
-    &lt;/p&gt;
-    &lt;p&gt;
-        Hold down the &lt;strong&gt;alt&lt;/strong&gt; key (&lt;strong&gt;ctrl&lt;/strong&gt; in Linux) and click on any element to zoom towards it using &lt;a href="http://lab.hakim.se/zoom-js"&gt;zoom.js&lt;/a&gt;. Click again to zoom back out.
-    &lt;/p&gt;
-    &lt;p&gt;
-        (NOTE: Use ctrl + click in Linux.)
-    &lt;/p&gt;
-&lt;/section&gt;
-
-</t>
-<t tx="leo.20200818171312.1">&lt;section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"&gt;
-    &lt;h2&gt;Auto-Animate&lt;/h2&gt;
-    &lt;p&gt;Automatically animate matching elements across slides with &lt;a href="https://revealjs.com/auto-animate/"&gt;Auto-Animate&lt;/a&gt;.&lt;/p&gt;
-    &lt;div class="r-hstack justify-center"&gt;
-        &lt;div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"&gt;&lt;/div&gt;
-        &lt;div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"&gt;&lt;/div&gt;
-        &lt;div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-</t>
-<t tx="leo.20200818171344.1">&lt;section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"&gt;
-    &lt;div class="r-hstack justify-center"&gt;
-        &lt;div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"&gt;&lt;/div&gt;
-        &lt;div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;"&gt;&lt;/div&gt;
-        &lt;div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;"&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;h2 style="margin-top: 20px;"&gt;Auto-Animate&lt;/h2&gt;
-&lt;/section&gt;
-</t>
+   &lt;section&gt;
+   &lt;h2&gt;Task2&lt;/h2&gt;
+   &lt;h3&gt;各人員將stag1及stage2加上lua或python remote api 控制&lt;/h3&gt;
+    &lt;/section&gt;</t>
+<t tx="leo.20200818171312.1">&lt;section&gt;
+   &lt;section&gt;
+   &lt;h2&gt;CoppeliaSimEdu_4.1.0模擬&lt;/h2&gt;
+ &lt;/section&gt;</t>
+<t tx="leo.20200818171344.1">&lt;section&gt;
+   &lt;section&gt;
+   &lt;h2&gt;直播影片&lt;/h2&gt;
+   &lt;h3&gt;W12&lt;/h3&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/T2CSmVCGPLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7dUx6LlgXMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+    &lt;/section&gt;</t>
 <t tx="leo.20200818171412.1">&lt;section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"&gt;
     &lt;div class="r-stack"&gt;
         &lt;div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"&gt;&lt;/div&gt;
