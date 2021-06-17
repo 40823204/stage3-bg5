@@ -227,7 +227,7 @@
    &lt;/section&gt;</t>
 <t tx="123.20210617162909.1">   &lt;section&gt;
    &lt;h4&gt;將車子的連接方式改變，使其能夠轉彎&lt;/h4&gt;
-   &lt;h5&gt;因為原本車子輪胎是前後輪為一體的，為了不再修改圖面，使用coppeliasim內建功能toggle shape edit mode,把四個輪胎分開後並分別接上各個連接軸&lt;/h5&gt;
+   &lt;h5&gt;說明:因原本車子輪胎是前後輪為一體的，為了不再修改圖面，使用coppeliasim內建功能toggle shape edit mode,把四個輪胎分開後並分別接上各個連接軸&lt;/h5&gt;
    &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ezSKHlxZ1FI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
    &lt;/section&gt;</t>
 <t tx="123.20210617162916.1">   &lt;section&gt;
@@ -408,7 +408,7 @@ vertical: body pane on the botton</t>
     &lt;/section&gt;</t>
 <t tx="leo.20200818171312.1">&lt;section&gt;
    &lt;h2&gt;CoppeliaSimEdu_4.1.0模擬&lt;/h2&gt;
-&lt;/section&gt;</t>
+   &lt;/section&gt;</t>
 <t tx="leo.20200818171344.1">&lt;section&gt;
    &lt;section&gt;
    &lt;h2&gt;直播影片&lt;/h2&gt;
