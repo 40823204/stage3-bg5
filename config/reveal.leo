@@ -41,7 +41,11 @@
 <v t="123.20210616153440.1"><vh>slide 7 -4</vh></v>
 <v t="123.20210616154431.1"><vh>slide 7 -5</vh></v>
 </v>
-<v t="leo.20200818171312.1"><vh>slide 8</vh></v>
+<v t="leo.20200818171312.1"><vh>slide 8</vh>
+<v t="123.20210617162743.1"><vh>slide 8-1</vh></v>
+<v t="123.20210617162909.1"><vh>slide 8-2</vh></v>
+<v t="123.20210617162916.1"><vh>slide 8-3</vh></v>
+</v>
 <v t="leo.20200818171344.1"><vh>slide 9</vh>
 <v t="123.20210616160314.1"><vh>slide 9-1</vh></v>
 <v t="123.20210616160327.1"><vh>slide 9-2</vh></v>
@@ -215,6 +219,21 @@
 &lt;/section&gt;</t>
 <t tx="123.20210616162635.1">&lt;section&gt;
     &lt;h1&gt;報告結束 謝謝大家&lt;/h1&gt;
+&lt;/section&gt;</t>
+<t tx="123.20210617162743.1">   &lt;section&gt;
+   &lt;h4&gt;使用coppeliasim做初步模擬+lua控制&lt;/h4&gt;
+   &lt;h5&gt;說明:在場景中做初步的零件連接，並利用lua控制車子前進，但因為連接軸的問題，車子目前只能做前後移動和上下調整角度&lt;/h5&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1p7-JPmSXnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+   &lt;/section&gt;</t>
+<t tx="123.20210617162909.1">   &lt;section&gt;
+   &lt;h4&gt;將車子的連接方式改變，使其能夠轉彎&lt;/h4&gt;
+   &lt;h5&gt;因為原本車子輪胎是前後輪為一體的，為了不再修改圖面，使用coppeliasim內建功能toggle shape edit mode,把四個輪胎分開後並分別接上各個連接軸&lt;/h5&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ezSKHlxZ1FI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+   &lt;/section&gt;</t>
+<t tx="123.20210617162916.1">   &lt;section&gt;
+   &lt;h4&gt;將程式用lua改為python remote api 控制&lt;/h4&gt;
+   &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VkEcGY76lNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+   &lt;/section&gt;
 &lt;/section&gt;</t>
 <t tx="leo.20180902120523.1"></t>
 <t tx="leo.20180902120523.2"></t>
